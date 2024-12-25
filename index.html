@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons Page</title>
+  <link rel="stylesheet" href="">
+</head>
+<style>/* General Reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+    }
+    
+    /* Header */
+    header {
+      background-color: #f4f4f4;
+      padding: 2px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: rgb(37, 125, 47);
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #f4f4f4;
+      padding: 10px;
+      text-align: center;
+      font-size: 16px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 120px);
+    }
+    
+    /* Button Container */
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .b1{
+        position: relative;
+        
+        right: 0%;
+        bottom: 30vb;
+    }
+    .b2{
+        position: relative;
+        right: -23%;
+        bottom: 30vb;
+    }
+    .b3{
+        position: relative;
+        right: -46%;
+        bottom: 30vb;
+    }
+    .b4{
+        position: relative;
+        right: 51%;
+        
+    }
+    .b5{
+        position: relative;
+        right: 182%;
+        
+    }
+    .b6{
+        position: relative;
+        right: 32%;
+        
+        
+    }
+    .logo{
+        position: absolute;
+        top: 20px;
+        z-index: 1;
+        height: 80px;
+        width: 180px;
+        left: 10px;
+    }
+    /* Buttons */
+    .button-container button {
+      background-color: rgb(100, 241, 100);
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      height: 110px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      position: relative;
+      top: 20px;
+      width: 22vb;
+    }
+    
+    button:hover {
+      background-color: darkgreen;
+    }
+    .log{
+        position: absolute;
+        z-index: 1;
+        padding: 5px 20px;
+        right:17vb;
+        top: 44px;
+        font-size: 13px;
+        border-radius: 20px;
+        background-color: rgb(100, 241, 100);
+    }
+    .sign{
+        position: absolute;
+        z-index: 1;
+        padding: 5px 20px;
+        right:2vb;
+        top: 44px;
+        font-size: 13px;
+        border-radius: 20px;
+        background-color: rgb(100, 241, 100);
+    }
+    </style>
+<body>
+  <header>
+    <h1>Welcome to MACOMMUNE</h1>
+  </header>
+  <main>
+    <div class="button-container">
+      <div class="b1"><button onclick="showMessage()">Make your birth certificate</button></div>
+      <div class="b2"><button onclick="showMessage()">Request your card online</button></div>
+      <div class="b3"><button onclick="showMessage()">See your card status</button></div>
+      <div class="b4"><button onclick="showMessage()">See your card number</button></div>
+      <a href="but5.html"><div class="b5"><button >Information about the website</button></div>
+      </a><a href="dumb.html"><div class="b6"><button href="dumb.html">Disconect</button></div>
+    </a></div>
+    <a href="login.html"><button class="log">log in</button></a>
+    <a href="signup.html"><button class="sign">sign up</button></a>
+    <img src="ihm.png" alt="" class="logo">
+  </main>
+  <footer>
+    <p>Page Footer</p>
+  </footer>
+  <script>
+    function showMessage() {
+      alert("You have to be connected first.");
+    }
+  </script>
+</body>
+</html>

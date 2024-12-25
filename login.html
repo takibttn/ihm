@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons Page</title>
+  <link rel="stylesheet" href="">
+</head>
+<style>
+    input[type="email"]{
+    width: 25%;
+    position: absolute;
+    right: 40%;
+    top: 30%;
+    outline: none;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+input[type="password"] {
+    width: 25%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 50vb;
+    border-radius: 10px;
+    right: 40%;
+    outline: none;
+}
+input:focus{
+    border:2px solid rgb(18, 240, 18);
+}
+button{
+    background-color:rgb(18, 240, 18);
+    position: absolute;
+    bottom: 42vb;
+    left: 44%;
+    border-radius: 20px;
+    height: 30px;
+    width: 90px;
+    color: white;
+}
+img{
+        position: absolute;
+        top: 20px;
+        z-index: 1;
+        height: 80px;
+        width: 180px;
+        left: 10px;
+    }
+    header {
+      background-color: #f4f4f4;
+      padding: 2px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: rgb(37, 125, 47);
+      position: relative;
+      right: 4vb;
+    }
+    body{
+        
+        margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+    
+    }
+    button:hover{
+        background-color: green;
+        color: black;
+    }
+    p{
+        
+        position: absolute;
+        top: 56%;
+        border-radius: 20px;
+        right: 43%;
+    }
+    a{
+        color: green;
+        text-decoration: none;
+    }
+</style>
+<header>
+    <h1>Logging in</h1>
+  </header>
+<body>
+    <form action="login.php" method="POST">
+    <input type="email" placeholder="Enter your email" name="email" required>
+    <input type="password" placeholder="Enter your password" name="password" required>
+    <button>submit</button>
+    <p>don't have an account?<a href="signup.html">sign up now!</a></p>
+    
+</form>
+<a href="index.html"><img src="ihm.png" alt=""></a>
+</body>

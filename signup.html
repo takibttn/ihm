@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+
+  header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(37, 125, 47);
+  }
+
+  img {
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+    height: 80px;
+    width: 180px;
+    left: 10px;
+  }
+
+  form {
+    margin: 40px auto;
+    padding: 20px;
+    width: 30%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  form input,
+  form select,
+  form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+  }
+
+  form input:focus,
+  form select:focus {
+    border: 2px solid rgb(18, 240, 18);
+  }
+
+  form button {
+    background-color: rgb(18, 240, 18);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  form button:hover {
+    background-color: green;
+    color: black;
+  }
+  label{
+    position: relative;
+    right: 24vb;
+    
+  }
+</style>
+<body>
+  <header>
+    <h1>Sign Up</h1>
+  </header>
+  <form action="signup.php" method="POST">
+    <input type="text" placeholder="Full Name" name="fullname" required>
+    <input type="text" placeholder="Place of Birth" name="placeofbirth" required>
+    <input type="text" placeholder="Address" name="address" required>
+    <input type="email" placeholder="Email" name="email" required>
+    <input type="number" placeholder="Card Number (Optional)" name="cardnumber">
+    <select name="gender" required>
+      <option value="" disabled selected>Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <input type="password" placeholder="Password" name="password" required>
+    <label for="date">Date of birth:</label>
+    <input type="date" placeholder="Date of Birth" name="dateofbirth" required>
+    <button type="submit">Submit</button>
+  </form>
+  <a href="index.html"><img src="ihm.png" alt=""></a>
+</body>
+</html>
